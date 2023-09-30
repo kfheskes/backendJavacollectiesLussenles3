@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Objects;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Bonus {
@@ -9,18 +10,20 @@ public class Bonus {
         // Onderstaande code is uitgecommentarieerd. Haal de code uit de comment (delete /* en */) om aan de slag te gaan met de bonus
         // In de code staan op verschillende plekken comments tussen "/*...*/" als hint wat je moet doen
 
+//        HashSet<Integer> secretnumber = randomnumbergenerator();
+//        String stringnumber = setToStringConverter(secretnumber);
+//        System.out.println(stringnumber);
+//        feedback(stringnumber);
+//    }
 
-        HashSet<Integer> secretnumber = randomnumbergenerator();
-        String stringnumber = setToStringConverter(secretnumber);
-        System.out.println(stringnumber);
-        feedback(/*vul hier het juiste argument in*/);
-
-    }
-
-    public static void/*moet dit returntype "void" zijn of wat anders?*/ randomnumbergenerator(/*Heeft deze methode nog parameter(s) nodig?*/){
+    public static HashSet<Integer> randomnumbergenerator(){
+        Random number = new Random();
+        int number1 = number.nextInt(4);
+        HashSet<Integer> secretNumber = new HashSet<>();
+        while (secretNumber.size() < 4 ){
+            int randomnumber =
+        }
          /*
-        Vul hier de body van de methode in.
-
         Stappenplan:
         - Maak een nieuwe variabele van type Random. (Tip: Zoek op internet hoe je Random kunt gebruiken)
         - Maak een nieuwe variabele van type HashSet.
